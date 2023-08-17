@@ -8,9 +8,11 @@ import Posts from './components/posts/Posts';
 import DashBoard from './components/dashBoard/DashBoard';
 import Login from './components/Login/Login';
 import ProtectedRoute from './components/protectedRoute/ProtectedRoute';
+import { useSelector } from 'react-redux';
 
 function App() {
-  let login = true;
+  // let login = true;
+  const {login} = useSelector(state=>state.custom)
   return (
     <>
     
